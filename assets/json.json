@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Full Body Workout",
+    "exercises": [
+      {"name": "Push-ups", "duration": 60},
+      {"name": "Squats", "duration": 45},
+      {"name": "Pull-ups", "duration": 60},
+      {"name": "Plank", "duration": 90}
+    ]
+  },
+  {
+    "name": "Cardio Blast",
+    "exercises": [
+      {"name": "Jumping Jacks", "duration": 60},
+      {"name": "High Knees", "duration": 60},
+      {"name": "Burpees", "duration": 45},
+      {"name": "Mountain Climbers", "duration": 60}
+    ]
+  }
+]

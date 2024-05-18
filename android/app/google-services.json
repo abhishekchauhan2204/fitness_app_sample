@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153869544696",
+    "project_id": "fitness-crunch-af447",
+    "storage_bucket": "fitness-crunch-af447.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153869544696:android:5a77f79642482735841f0d",
+        "android_client_info": {
+          "package_name": "com.example.fitness_app_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZxfh0dlBVYMR07nucsYtznMSZNmTYTPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
