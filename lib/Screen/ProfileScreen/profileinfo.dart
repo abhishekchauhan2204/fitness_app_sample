@@ -13,7 +13,7 @@ class ProfileInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
+    return ListTile(titleTextStyle: TextStyle(fontSize: 20),
       leading: Icon(icon, color: Colors.deepPurple),
       title: Text(title),
       trailing: trailing ?? Icon(Icons.arrow_forward_ios, color: Colors.deepPurple),

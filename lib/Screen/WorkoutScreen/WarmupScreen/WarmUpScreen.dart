@@ -21,7 +21,7 @@ class _WarmupScreenState extends State<WarmupScreen> {
   late DateTime startTime;
   final double speedKmPerSecond =
       0.13461 / 60; // Average speed in km per second
-  final double targetDistance = .11; // Target distance in KM
+  final double targetDistance = .03; // Target distance in KM
 
   @override
   void initState() {

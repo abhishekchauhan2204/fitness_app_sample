@@ -12,7 +12,7 @@ class WorkoutTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(color: Colors.white38,
+    return Card(color: Colors.white60,
       child: ListTile(titleTextStyle: tb20(),
         leading: Icon(Icons.fitness_center),
         title: Text(name),

@@ -21,7 +21,7 @@ class _FatburnerworkoutScreenState extends State<FatburnerworkoutScreen> {
   int workoutIndex = 0;
   Timer? timer;
   late DateTime startTime;
-  final int totalWorkoutDuration = 4 * workoutlist.length; // Total workout duration in seconds (10 minutes)
+  final int totalWorkoutDuration = 1 * workoutlist.length; // Total workout duration in seconds (10 minutes)
 
 
   @override
@@ -40,7 +40,7 @@ class _FatburnerworkoutScreenState extends State<FatburnerworkoutScreen> {
     timer = Timer.periodic(Duration(seconds: 1), (Timer t) {
       setState(() {
         secondsElapsed++;
-        if (secondsElapsed % 4 == 0) {
+        if (secondsElapsed % 1 == 0) {
           workoutIndex = (workoutIndex + 1) % workoutlist.length;
         }
         if (secondsElapsed >= totalWorkoutDuration) {
