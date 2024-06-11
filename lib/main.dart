@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => WarmupState()),
-          ChangeNotifierProvider(create: (_) => WarmupStateHiit()),
+          ChangeNotifierProvider(create: (_) => FatBurnerHiit()),
         ],
         child: MaterialApp(
             title: 'Fitness Crunch',

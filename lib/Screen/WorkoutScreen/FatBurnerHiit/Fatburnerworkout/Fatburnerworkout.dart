@@ -86,7 +86,7 @@ class _FatburnerworkoutScreenState extends State<FatburnerworkoutScreen> {
           actions: [
             TextButton(
               onPressed: () {
-                Provider.of<WarmupStateHiit>(context, listen: false).completeFatburner();
+                Provider.of<FatBurnerHiit>(context, listen: false).completeFatburner();
                 Navigator.pop(context); // Close the alert dialog
                 Navigator.pop(context);// Pop the WarmupScreen
               },

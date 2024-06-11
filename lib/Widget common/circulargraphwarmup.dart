@@ -9,8 +9,10 @@ import '../Screen/provider/provider.dart';
 class CircularGraphScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Scaffold(backgroundColor: Color(0xFF1C1B2E),
+      appBar: AppBar(backgroundColor: Colors.transparent,titleTextStyle: TextStyle(color: Colors.white,fontSize: 21), iconTheme: IconThemeData(
+        color: Colors.white, // This will change the color of the back button to white
+      ),
         title: Text('Circular Graph & Real-time Data'),
       ),
       body: Consumer<WarmupState>(
@@ -45,17 +47,11 @@ class CircularGraphScreen extends StatelessWidget {
                     var date = entry['date'] as DateTime;
                     var formattedDate = "${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}";
                     return ListTile(
-                      title: Text("Day ${entry['completedDays']}"),
-                      subtitle: Text(formattedDate),
+                      title: Text("Day ${entry['completedDays']}",style: TextStyle(color: Colors.white,fontSize: 21)),
+                      subtitle: Text(formattedDate,style: TextStyle(color: Colors.white,fontSize: 16)),
                     );
                   },
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  warmupState.completeWarmup();
-                },
-                child: Text('Complete Warmup'),
               ),
               ElevatedButton(
                 onPressed: () {

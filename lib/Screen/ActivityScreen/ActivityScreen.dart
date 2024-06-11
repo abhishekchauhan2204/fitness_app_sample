@@ -1,8 +1,10 @@
-import 'package:fitness_app_sample/Widget%20common/circular%20graph.dart';
+
+import 'package:fitness_app_sample/Widget%20common/circulargraphFatburnerHiit.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
+import '../../Widget common/circulargraphwarmup.dart';
 import '../../Widget common/textstyle.dart';
 import '../provider/provider.dart';
 import 'scheduleitem.dart';
@@ -20,7 +22,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
   @override
   Widget build(BuildContext context) {
     bool isWarmupCompleted = Provider.of<WarmupState>(context).isCompleted;
-    bool isHiitCompleted = Provider.of<WarmupStateHiit>(context).isCompleted;
+    bool isHiitCompleted = Provider.of<FatBurnerHiit>(context).isCompleted;
 
     return Scaffold(
       backgroundColor: Color(0xFF1C1B2E),
@@ -105,7 +107,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
                     isCompleted: isWarmupCompleted,
                   ),
                   ScheduleItem(voidcall: () {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => CircularGraphScreenFatburnerState(),));
                   },
                     time: '4pm',
                     title: 'Pushups session',
