@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fitness_app_sample/Screen/ProfileScreen/ProfileScreen.dart';
 import 'package:fitness_app_sample/Screen/WorkoutScreen/FatBurnerHiit/FatburnerhiitScreen.dart';
 import 'package:fitness_app_sample/Screen/WorkoutScreen/WarmupScreen/WarmUpScreen.dart';
 import 'package:flutter/material.dart';
@@ -150,6 +149,7 @@ class _TrainingScreenState extends State<TrainingScreen> {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => FatBurnerScreen(),));
                 },
               ),SizedBox(height: 30,),
+             
 
             ],
           ),

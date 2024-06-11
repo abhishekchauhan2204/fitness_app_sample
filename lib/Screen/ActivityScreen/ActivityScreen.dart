@@ -1,3 +1,4 @@
+import 'package:fitness_app_sample/Widget%20common/circular%20graph.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
@@ -94,14 +95,18 @@ class _ActivityScreenState extends State<ActivityScreen> {
             Expanded(
               child: ListView(
                 children: [
-                  ScheduleItem(
+                  ScheduleItem(voidcall: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => CircularGraphScreen(),));
+                  },
                     time: '8am',
                     title: 'WarmUp',
                     description: 'Run 02 km',
                     backgroundColor: Colors.blue.shade200,
                     isCompleted: isWarmupCompleted,
                   ),
-                  ScheduleItem(
+                  ScheduleItem(voidcall: () {
+
+                  },
                     time: '4pm',
                     title: 'Pushups session',
                     description: '25 rep, 3 sets with 20 sec rest',

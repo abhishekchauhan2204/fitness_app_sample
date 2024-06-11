@@ -2,13 +2,13 @@
 
 import 'package:fitness_app_sample/Screen/ProfileScreen/ProfileScreen.dart';
 import 'package:fitness_app_sample/Screen/TrainingScreen/TrainingScreen.dart';
-import 'package:fitness_app_sample/Widget%20common/textstyle.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../ActivityScreen/ActivityScreen.dart';
 
 class HomeScreen extends StatefulWidget {
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
